@@ -8,7 +8,7 @@
 /* ===== Page Background ===== */
 body {
     font-family: "Georgia", serif;
-    background: linear-gradient(to bottom, #14100d, #0b0907);
+    background-color: #0d0a08;
     color: #f4efe6;
     padding: 60px 20px;
 }
