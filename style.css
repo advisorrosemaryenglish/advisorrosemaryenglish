@@ -1,94 +1,84 @@
-/* ===== Global Reset ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* ===== Page Background ===== */
 body {
-    font-family: "Georgia", serif;
+    margin: 0;
     background-color: #070304;
-    color: #f4efe6;
-    padding: 60px 20px;
-}
-
-/* ===== Center Layout ===== */
-.wrapper {
-    max-width: 900px;
-    margin: auto;
+    font-family: 'Cormorant Garamond', serif;
+    color: #D8AB76;
     text-align: center;
 }
 
-/* ===== Logo ===== */
+/* Main Wrapper */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+/* Logo */
 .logo {
-    width: 330px;
-    margin-bottom: 50px;
+    width: 240px;
+    margin-bottom: 10px;
 }
 
-/* ===== About Section ===== */
-.about-section {
-    margin-bottom: 50px;
-}
-
-.about-section h2 {
-    font-size: 32px;
-    color: #d4a15a;   /* muted gold */
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
-
-.about-section p {
+/* Subtitle */
+.subtitle {
+    font-style: italic;
     font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 22px;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 45px;
+    color: #C79A64;
+    letter-spacing: 0.5px;
 }
 
-/* ===== Button ===== */
-.button {
+/* Advisory Section Background */
+.advisory-section {
+    background: radial-gradient(circle at center, #23120f 0%, #120604 75%);
+    padding: 60px 35px;
+    border-radius: 6px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.9);
+}
+
+/* Section Title */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Portrait */
+.portrait {
+    width: 260px;
+    border-radius: 4px;
+    margin: 25px 0 35px 0;
+}
+
+/* Paragraph */
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* Button */
+.cta-button {
     display: inline-block;
-    margin-top: 30px;
-    padding: 15px 35px;
-    background-color: #d4a15a;
-    color: #151311;
-    font-weight: 600;
+    padding: 16px 40px;
+    border: 1px solid #D8AB76;
+    color: #D8AB76;
     text-decoration: none;
-    border-radius: 30px;
-    font-size: 16px;
-    transition: 0.3s ease;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
-.button:hover {
-    background-color: #e8b770;
-    transform: translateY(-2px);
+.cta-button:hover {
+    background-color: #D8AB76;
+    color: #070304;
 }
 
-/* ===== Headshot ===== */
-.headshot {
-    width: 370px;
-    border-radius: 15px;
-    margin-top: 40px;
-    box-shadow: 0px 15px 35px rgba(0,0,0,0.5);
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-    .logo {
-        width: 250px;
-    }
-
-    .headshot {
-        width: 80%;
-    }
-
-    .about-section h2 {
-        font-size: 26px;
-    }
-
-    .about-section p {
-        font-size: 16px;
-    }
+/* Footer line */
+.tagline {
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 15px;
+    color: #C79A64;
 }
