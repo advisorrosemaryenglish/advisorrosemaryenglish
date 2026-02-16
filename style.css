@@ -92,16 +92,18 @@ body {
 }
 
 .card {
-    background-color: #14161c;
-    padding: 32px;
-    border-radius: 10px;
-    border-left: 3px solid #945f28;
-    transition: 0.3s ease;
+    background-color: #141822;  /* slightly richer navy */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(216, 163, 157, 0.3);
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    background-color: #1b1e26;
-    transform: translateY(-3px);
+    background-color: #1b1f2b;
+    border-color: #d8a39d;
+    box-shadow: 0 0 20px rgba(216, 163, 157, 0.25);
+    transform: translateY(-4px);
 }
 
 .card h4 {
