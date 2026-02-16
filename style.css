@@ -113,11 +113,11 @@ body {
 
 .cta-button {
     display: inline-block;
-    margin-top: 35px;
-    padding: 16px 36px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    margin-top: 40px;
+    padding: 18px 42px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -125,12 +125,13 @@ body {
     background: linear-gradient(90deg, #c07a6a, #dca59a);
     border-radius: 50px;
 
+    box-shadow: 0 8px 25px rgba(216,163,157,0.25);
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(216,163,157,0.35);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(216,163,157,0.4);
 }
 
 /* CONTACT */
