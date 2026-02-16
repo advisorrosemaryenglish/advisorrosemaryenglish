@@ -145,6 +145,8 @@ body {
     font-size: 23px;
     font-weight: 600;
     margin-top: 20px;
+    text-align: center;
+    padding: 0 15px;
 }
 
 .label {
@@ -158,6 +160,7 @@ body {
 }
 
 .contact p {
+    word-break: break-word;
     color: #e3b2a6;
     font-weight: 600;
     letter-spacing: 1px;
@@ -185,10 +188,12 @@ body {
 @media (max-width: 900px) {
 
     .main-headline {
-        font-size: 40px;
-        white-space: normal;
-    }
-
+    font-size: 36px;
+    line-height: 1.2;
+    white-space: normal;   
+    padding: 0 10px;      
+}
+    
     .content-row {
         flex-direction: column;
         align-items: center;
