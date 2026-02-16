@@ -42,13 +42,15 @@ body {
    FULL WIDTH HEADLINE
 ========================= */
 
-.main-headline {
+main-headline {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    font-size: 48px;
+    font-size: 44px;   /* slightly reduced from 48 */
     font-weight: 700;
     margin-bottom: 70px;
     letter-spacing: 1px;
-    white-space: nowrap;
 
     background: linear-gradient(90deg, #945f28, #cccf79);
     -webkit-background-clip: text;
@@ -74,10 +76,10 @@ body {
 }
 
 .subtext {
-    font-size: 21px;
-    line-height: 1.85;
-    margin-bottom: 45px;
-    color: #e6e6e6;
+    font-size: 22px;   /* was 21 */
+    line-height: 1.9;
+    margin-bottom: 50px;
+    color: #e8e8e8;
 }
 
 /* SERVICES GRID */
@@ -111,12 +113,13 @@ body {
 /* CONTACT */
 
 .contact {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 500;
+    margin-top: 10px;
 }
 
 .contact p {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 /* RIGHT SIDE IMAGE */
