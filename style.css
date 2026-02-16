@@ -127,7 +127,9 @@ body {
 }
 
 .contact p {
-    margin-bottom: 18px;
+    color: #e3b2a6;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* RIGHT SIDE IMAGE */
