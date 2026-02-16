@@ -34,7 +34,7 @@ body {
 }
 
 .top-brand img {
-    max-width: 480px;
+    max-width: 600px;   /* bigger presence */
     width: 100%;
 }
 
@@ -42,15 +42,14 @@ body {
    FULL WIDTH HEADLINE
 ========================= */
 
-main-headline {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.main-headline {
     text-align: center;
-    font-size: 44px;   /* slightly reduced from 48 */
+    font-size: 46px;
     font-weight: 700;
-    margin-bottom: 70px;
     letter-spacing: 1px;
+
+    margin: 60px auto 80px auto;   /* perfectly balanced vertical spacing */
+    max-width: 1100px;
 
     background: linear-gradient(90deg, #945f28, #cccf79);
     -webkit-background-clip: text;
@@ -76,10 +75,10 @@ main-headline {
 }
 
 .subtext {
-    font-size: 22px;   /* was 21 */
+    font-size: 24px;     /* yes — 24px */
     line-height: 1.9;
-    margin-bottom: 50px;
-    color: #e8e8e8;
+    margin-bottom: 55px;
+    color: #ededed;
 }
 
 /* SERVICES GRID */
@@ -113,13 +112,13 @@ main-headline {
 /* CONTACT */
 
 .contact {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .contact p {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 /* RIGHT SIDE IMAGE */
@@ -130,7 +129,7 @@ main-headline {
 }
 
 .right-column img {
-    max-width: 440px;
+    max-width: 470px;
     width: 100%;
     border-radius: 14px;
 }
