@@ -21,7 +21,7 @@ body {
 }
 
 .hero {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .hero-content {
@@ -42,8 +42,7 @@ body {
 
 .right img {
     width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
+    max-width: 460px;
 }
 
 .logo h1 {
@@ -66,17 +65,19 @@ body {
 }
 
 .headline {
-    margin-top: 35px;
-    font-size: 36px;  /* was 28px */
-    color: #d4af37;
-    font-weight: 600;
-    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #945f28, #cccf79);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .subtext {
-    margin-top: 22px;
-    line-height: 1.7;
-    font-size: 18px;   /* was 16px */
+    margin-top: 25px;
+    line-height: 1.8;
+    font-size: 20px;   /* was 18 */
+    max-width: 600px;
     color: #e0e0e0;    /* brighter than #ccc */
 }
 
