@@ -111,6 +111,40 @@ body {
     font-weight: 600;
     line-height: 1.5;
 }
+/* Expandable Card Content */
+
+.card {
+    cursor: pointer;
+    position: relative;
+}
+
+.card h4::after {
+    content: " +";
+    float: right;
+    transition: 0.3s ease;
+}
+
+.card.active h4::after {
+    content: " −";
+}
+
+.card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, margin-top 0.3s ease;
+    margin-top: 0;
+}
+
+.card.active .card-content {
+    max-height: 200px;
+    margin-top: 15px;
+}
+
+.card-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #e6d6d2;
+}
 
 .cta-wrapper {
     display: flex;
