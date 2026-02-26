@@ -103,8 +103,16 @@
 
 
 <script>
-function toggleCard(card) {
-    card.classList.toggle("active");
+function toggleCard(selectedCard) {
+    const allCards = document.querySelectorAll(".card");
+
+    allCards.forEach(card => {
+        if (card !== selectedCard) {
+            card.classList.remove("active");
+        }
+    });
+
+    selectedCard.classList.toggle("active");
 }
 </script>
 </body></html>
