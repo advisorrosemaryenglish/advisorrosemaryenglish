@@ -177,7 +177,7 @@ body {
 
 .video-wrapper {
     width: 100%;
-    max-width: 480px;
+    max-width: 480px;   /* slightly narrower for elegance */
     margin: 0 auto;
     border-radius: 18px;
     overflow: hidden;
@@ -187,7 +187,7 @@ body {
 .video-wrapper iframe {
     transform: translateY(-20px);
     width: 100%;
-    aspect-ratio: 9 / 16;
+    aspect-ratio: 9 / 16;   /* keeps it vertical cleanly */
     border: none;
     display: block;
 }
