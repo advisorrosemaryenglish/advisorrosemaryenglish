@@ -107,12 +107,34 @@ function toggleCard(selectedCard) {
     const allCards = document.querySelectorAll(".card");
 
     allCards.forEach(card => {
+        const content = card.querySelector(".card-content");
+
         if (card !== selectedCard) {
             card.classList.remove("active");
+            content.style.height = "0px";
         }
     });
 
-    selectedCard.classList.toggle("active");
+    const content = selectedCard.querySelector(".card-content");
+
+    if (selectedCard.classList.contains("active")) {
+        // Close it
+        content.style.height = content.scrollHeight + "px";
+        requestAnimationFrame(() => {
+            content.style.height = "0px";
+        });
+        selectedCard.classList.remove("active");
+    } else {
+        // Open it
+        selectedCard.classList.add("active");
+        content.style.height = "auto";
+        const height = content.scrollHeight + "px";
+        content.style.height = "0px";
+
+        requestAnimationFrame(() => {
+            content.style.height = height;
+        });
+    }
 }
 </script>
 </body></html>
