@@ -23,7 +23,9 @@ body {
     padding: 80px 0 120px 0;
 }
 
-/* Logo */
+/* =========================
+   Logo
+========================= */
 
 .top-brand {
     text-align: center;
@@ -35,7 +37,9 @@ body {
     width: 100%;
 }
 
-/* Headline */
+/* =========================
+   Headline
+========================= */
 
 .main-headline {
     text-align: center;
@@ -48,36 +52,47 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Blueprint Section */
+/* =========================
+   Blueprint Section
+========================= */
 
 .blueprint-section {
     max-width: 900px;
-    margin: 0 auto 60px auto; /* centered block */
+    margin: 0 auto 80px auto;
 }
 
 .blueprint-heading {
     text-align: center;
     margin-bottom: 20px;
+    color: #e6d6d2; /* same as intro */
+    font-weight: 600;
 }
 
 .blueprint-intro {
-    text-align: left; /* left aligned inside centered block */
+    text-align: left;
     font-size: 17px;
     color: #e6d6d2;
 }
 
-/* Layout */
+/* =========================
+   Layout
+========================= */
 
 .content-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center; /* vertical center alignment */
     gap: 120px;
 }
 
 .left-column {
     flex: 1;
     max-width: 620px;
+
+    /* THIS centers cards vertically against video */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .services {
@@ -86,7 +101,9 @@ body {
     gap: 30px;
 }
 
-/* Cards */
+/* =========================
+   Cards
+========================= */
 
 .card {
     background-color: #141822;
@@ -130,13 +147,15 @@ body {
     margin: 20px 0 20px 20px;
 }
 
-/* CTA + Contact centered under cards */
+/* =========================
+   CTA + Contact
+========================= */
 
 .bottom-row {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centered within left column */
+    align-items: center; /* centered under cards */
     text-align: center;
     gap: 20px;
 }
@@ -163,7 +182,9 @@ body {
     font-size: 16px;
 }
 
-/* Smaller Video */
+/* =========================
+   Video
+========================= */
 
 .right-column {
     flex: 1;
@@ -173,7 +194,7 @@ body {
 
 .video-wrapper {
     width: 100%;
-    max-width: 420px; /* reduced size */
+    max-width: 420px;
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0,0,0,0.45);
@@ -185,7 +206,9 @@ body {
     border: none;
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================= */
 
 @media (max-width: 900px) {
 
@@ -202,4 +225,8 @@ body {
     .blueprint-section {
         padding: 0 20px;
     }
-}
+
+    .left-column {
+        justify-content: flex-start;
+    }
+}}
