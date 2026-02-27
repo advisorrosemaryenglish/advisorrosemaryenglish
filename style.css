@@ -23,6 +23,8 @@ body {
     padding: 80px 0 120px 0;
 }
 
+/* Logo */
+
 .top-brand {
     text-align: center;
     margin-bottom: 50px;
@@ -33,31 +35,44 @@ body {
     width: 100%;
 }
 
+/* Headline */
+
 .main-headline {
     text-align: center;
     font-size: clamp(32px, 5vw, 52px);
     font-weight: 700;
-    margin: 60px auto 60px auto;
+    margin: 60px auto;
     max-width: 1100px;
-
     background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.blueprint-heading,
-.blueprint-intro {
-    text-align: center;
+/* Blueprint Section */
+
+.blueprint-section {
     max-width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 60px auto; /* centered block */
 }
+
+.blueprint-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blueprint-intro {
+    text-align: left; /* left aligned inside centered block */
+    font-size: 17px;
+    color: #e6d6d2;
+}
+
+/* Layout */
 
 .content-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-    margin-top: 60px;
+    align-items: flex-start;
+    gap: 120px;
 }
 
 .left-column {
@@ -70,6 +85,8 @@ body {
     flex-direction: column;
     gap: 30px;
 }
+
+/* Cards */
 
 .card {
     background-color: #141822;
@@ -113,17 +130,20 @@ body {
     margin: 20px 0 20px 20px;
 }
 
+/* CTA + Contact centered under cards */
+
 .bottom-row {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center; /* centered within left column */
+    text-align: center;
     gap: 20px;
-    align-items: flex-start;
 }
 
 .cta-button {
-    padding: 18px 42px;
-    font-size: 15px;
+    padding: 16px 36px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -140,7 +160,10 @@ body {
 .contact {
     font-weight: 600;
     color: #e3b2a6;
+    font-size: 16px;
 }
+
+/* Smaller Video */
 
 .right-column {
     flex: 1;
@@ -150,7 +173,7 @@ body {
 
 .video-wrapper {
     width: 100%;
-    max-width: 520px;
+    max-width: 420px; /* reduced size */
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0,0,0,0.45);
@@ -161,6 +184,8 @@ body {
     aspect-ratio: 9 / 16;
     border: none;
 }
+
+/* Responsive */
 
 @media (max-width: 900px) {
 
@@ -174,8 +199,7 @@ body {
         max-width: 100%;
     }
 
-    .bottom-row {
-        align-items: center;
-        text-align: center;
+    .blueprint-section {
+        padding: 0 20px;
     }
 }
