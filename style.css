@@ -71,15 +71,8 @@ body {
 /* LEFT SIDE */
 
 .left-column {
-    flex: 1;
-    max-width: 720px;
-}
-
-.subtext {
-    font-size: 25px;     /* up 1px from 24 */
-    line-height: 1.9;
-    margin-bottom: 45px;
-    color: #ededed;
+    flex: 1.2;
+    max-width: 820px;
 }
 
 /* SERVICES GRID */
@@ -201,7 +194,7 @@ body {
 .cta-wrapper {
     display: flex;
     justify-content: center;
-    margin: 10px 0 25px 0;
+    margin: 80px 0 25px 0;
 }
 .blueprint-heading {
     text-align: center;
@@ -286,7 +279,7 @@ body {
 /* RIGHT SIDE IMAGE */
 
 .right-column {
-    flex: 1.1;   /* slightly more space than left column */
+    flex: 0.9;   /* slightly more space than left column */
     display: flex;
     justify-content: center;
 }
