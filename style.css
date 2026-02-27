@@ -197,10 +197,42 @@ body {
     letter-spacing: 2px;
     color: #ffffff;
 }
+
 .cta-wrapper {
     display: flex;
     justify-content: center;
     margin: 10px 0 25px 0;
+}
+.blueprint-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blueprint-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 60px auto;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #e8e8e8;
+}
+
+.card-content ul {
+    margin: 20px 0 20px 20px;
+    padding-left: 15px;
+}
+
+.card-content li {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #e6d6d2;
 }
 
 .cta-button {
