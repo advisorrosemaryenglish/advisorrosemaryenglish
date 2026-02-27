@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 92%;
-    max-width: 1600px;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 /* =========================
-   TOP LOGO
+   TOP BRAND
 ========================= */
 
 .top-brand {
@@ -40,81 +40,54 @@ body {
 }
 
 /* =========================
-   HEADLINES
+   HEADLINE
 ========================= */
 
 .main-headline {
-    text-shadow: 0 0 20px rgba(216, 163, 157, 0.25);
     text-align: center;
     font-size: clamp(32px, 5vw, 52px);
     font-weight: 700;
     letter-spacing: 1px;
     margin: 60px auto 80px auto;
     max-width: 1100px;
+
     background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
 
-.blueprint-heading {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0 auto 20px auto;
-    background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.blueprint-intro {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 70px auto;
-    font-size: 20px;
-    line-height: 1.8;
-    color: #e8e8e8;
+    text-shadow: 0 0 20px rgba(216, 163, 157, 0.25);
 }
 
 /* =========================
-   CONTENT ROW
+   MAIN CONTENT ROW
 ========================= */
 
 .content-row {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 60px;
+    gap: 90px; /* visual breathing room */
 }
 
-.left-column,
-.right-column {
+/* LEFT COLUMN (CARDS) */
+
+.left-column {
     flex: 1;
     min-width: 0;
+    max-width: 600px; /* keeps balance */
 }
 
-.right-column {
-    display: flex;
-    justify-content: center;
-}
-
-/* =========================
-   SERVICES GRID
-========================= */
+/* STACKED CARDS */
 
 .services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
-/* =========================
-   CARDS
-========================= */
 
 .card {
     background-color: #141822;
-    padding: 30px;
+    padding: 32px;
     border-radius: 12px;
     border: 1px solid rgba(216, 163, 157, 0.35);
     cursor: pointer;
@@ -159,7 +132,6 @@ body {
     overflow: hidden;
     opacity: 0;
     transition: height 0.4s ease, opacity 0.3s ease;
-    padding-top: 15px;
 }
 
 .card.active {
@@ -183,25 +155,48 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #e6d6d2;
+    padding-top: 15px;
 }
 
 .card-content ul {
-    margin: 15px 0 15px 20px;
+    margin: 20px 0 20px 20px;
     padding-left: 15px;
 }
 
 .card-content li {
-    margin-bottom: 6px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 17px;
     color: #e6d6d2;
 }
 
-/* =========================
-   VIDEO
-========================= */
+.card-link {
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #dca59a;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+/* RIGHT COLUMN (VIDEO) */
+
+.right-column {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+}
 
 .video-wrapper {
     width: 100%;
+    max-width: 520px; /* visually balances stacked cards */
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 30px 60px rgba(0,0,0,0.45);
@@ -215,7 +210,7 @@ body {
 }
 
 /* =========================
-   CTA + CONTACT (CENTERED STACKED)
+   CTA + CONTACT (CENTERED)
 ========================= */
 
 .bottom-row {
@@ -224,7 +219,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -259,18 +254,9 @@ body {
 
 .contact p {
     white-space: nowrap;
-    margin: 4px 0;
     color: #e3b2a6;
+    font-weight: 600;
     letter-spacing: 1px;
-}
-
-.label {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-right: 8px;
-    background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* =========================
@@ -282,23 +268,25 @@ body {
     .content-row {
         flex-direction: column;
         align-items: center;
+        gap: 60px;
     }
 
-    .services {
-        grid-template-columns: 1fr;
+    .left-column,
+    .right-column {
+        max-width: 100%;
     }
 
     .video-wrapper {
-        margin-top: 40px;
         max-width: 420px;
     }
 
-    .bottom-row {
-        gap: 20px;
+    .main-headline {
+        line-height: 1.25;
+        padding: 0 24px;
     }
 
     .contact p {
-        white-space: normal;
+        white-space: normal; /* prevents overflow on small screens */
         text-align: center;
     }
 }
