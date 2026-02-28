@@ -124,10 +124,7 @@ body {
 .card h4 {
     font-size: 19px;
     font-weight: 600;
-
-    background: linear-gradient(90deg, #9f5c4f, #c07a6a, #dca59a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #e6d6d2;
 }
 
 .card-content {
